@@ -4,9 +4,9 @@
 **BARC0053:** Bartlett Architecture Skills Elective (B-Pro Courses) 25/26
 **Final Assignment Report**
 **Tutor:** Ioana Drogeanu
-**Student number:** _________
-**GitHub Repository:** https://github.com/_________/synthetic-archaeology
-**OneDrive Large Files:** _________
+**Student number:** 25217145
+**GitHub Repository:** https://github.com/Xiaoyuan-Rao/synthetic-archaeology
+**OneDrive Large Files:** https://liveuclac-my.sharepoint.com/:f:/g/personal/ucbvxr0_ucl_ac_uk/IgDhwf4scqmuSrxvjEnf63xlAbJli6S2QKK5bCRpB_3h3Ko?e=FbxL3d
 
 ---
 
