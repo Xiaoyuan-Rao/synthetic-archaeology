@@ -1,0 +1,77 @@
+# ---- SECRETS ----
+.env
+.env.local
+*.key
+secrets/
+**/openai_key*
+
+# ---- LARGE DATA / GENERATED ARTIFACTS (go to OneDrive instead) ----
+# Raw scraped images & thumbnails — keep CSVs, send images to OneDrive
+data/raw/loc/images/
+data/raw/wayback/thumbnails/
+# Raw dumps used only for reprocessing — can be regenerated
+data/raw/**/*_raw.json
+# Processed model artefacts (large .npy embeddings / pickles)
+data/processed/*.npy
+data/processed/*.pkl
+data/processed/*.npz
+data/generated/dalle/
+# Per-chapter heavy outputs that should not bloat the repo
+Chapter_2/Vectorization/Outputs/*.npy
+Chapter_2/Clustering/Outputs/*.npy
+# Blender / TouchDesigner project files — too big for GitHub (>100MB), go to OneDrive
+Chapter_3/Blender/*.blend
+Chapter_3/Blender/*.blend1
+Chapter_3/Blender/cache/
+Chapter_3/Blender/*.obj
+Chapter_3/Blender/*.fbx
+Chapter_3/TouchDesigner/*.toe
+Chapter_3/TouchDesigner/*.toe.*
+Chapter_3/TouchDesigner/Backup/
+Chapter_3/TouchDesigner/*.wav
+Chapter_3/TouchDesigner/*.aiff
+Chapter_3/TouchDesigner/*.mp3
+# Renders
+Chapter_3/Renders/*.mp4
+Chapter_3/Renders/*.mov
+Chapter_3/Renders/*.exr
+Chapter_3/Renders/frames/
+Chapter_3/AI_Image_Generation/outputs/*.png
+
+# ---- ONEDRIVE STAGING (built by prepare_onedrive.py) ----
+OneDrive_staging/
+
+# ---- MODEL WEIGHTS (download on demand, not in repo) ----
+models/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+distilgpt2-finetuned/
+sentence-transformers-cache/
+
+# ---- PYTHON ----
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- LOGS ----
+*.log
+logs/
